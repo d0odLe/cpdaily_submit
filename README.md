@@ -29,5 +29,7 @@
     ```shell script
    0 10 20 * * * *
     ```
+**最后建议大家尽量修改不同的触发时间，不要扎堆打卡，这样比较利于长久发展**
+
 ## 其他
 觉得好用的话请给 [liujilong0116](https://github.com/liujilong0116/cpdaily_submit)、[ZimoLoveShuang/auto-submit](https://github.com/ZimoLoveShuang/auto-submit) 给个star/fork
