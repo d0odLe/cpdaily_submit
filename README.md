@@ -19,18 +19,15 @@
 ## 使用方法
   
 * **云端系统运行**
-
-  1. 打开百度搜索[腾讯云函数](https://console.cloud.tencent.com/scf/index?rid=1)，注册认证后，进入控制台，点击左边的  层，然后点新建，名称随意，然后点击上传zip，选择release中的`dependency.zip`上传，然后选择运行环境`python3.6`，然后点击确定，耐心等待一下，上传依赖包需要花费的时间比较长
+1. 打开百度搜索[腾讯云函数](https://console.cloud.tencent.com/scf/index?rid=1)，注册认证后，进入控制台，点击左边的  层，然后点新建，名称随意，然后点击上传zip，选择release中的`dependency.zip`上传，然后选择运行环境`python3.6`，然后点击确定，耐心等待一下，上传依赖包需要花费的时间比较长
   ![新建腾讯云函数依赖](screenshots/ed6044e6.png)
-  2. 点左边的函数服务，新建云函数，名称随意，运行环境选择`python3.6`，创建方式选择空白函数，然后点击下一步
+2. 点左边的函数服务，新建云函数，名称随意，运行环境选择`python3.6`，创建方式选择空白函数，然后点击下一步
 ![新建腾讯云函数](screenshots/a971478e.png)
-  3. 提交方法选择在线编辑，把本地修改好的`index.py`直接全文复制粘贴到云函数的`index.py`，然后点击文件->新建，文件名命名为`config.yml`，然后把本地配置好的`config.yml`文件中的内容直接全文复制粘贴到云函数的`config.yml`文件，点击下面的高级设置，设置超时时间为`60秒`，**添加层为刚刚新建的函数依赖层**，然后点击完成
+3. 提交方法选择在线编辑，把本地修改好的`index.py`直接全文复制粘贴到云函数的`index.py`，然后点击文件->新建，文件名命名为`config.yml`，然后把本地配置好的`config.yml`文件中的内容直接全文复制粘贴到云函数的`config.yml`文件，点击下面的高级设置，设置超时时间为`60秒`，**添加层为刚刚新建的函数依赖层**，然后点击完成
 ![配置腾讯云函数](screenshots/1aa80c41.png)
-  1. 进入新建好的云函数，左边点击触发管理，点击创建触发器，名称随意，触发周期选择自定义，然后配置cron表达式，下面的表达式表示每天晚上8点1分执行
+4. 进入新建好的云函数，左边点击触发管理，点击创建触发器，名称随意，触发周期选择自定义，然后配置cron表达式，下面的表达式表示每天晚上8：10分执行
     ```shell script
-   0 1 20 * * * *
+   0 10 20 * * * *
     ```
-  
 ## 其他
 觉得好用的话请给 [liujilong0116](https://github.com/liujilong0116/cpdaily_submit)、[ZimoLoveShuang/auto-submit](https://github.com/ZimoLoveShuang/auto-submit) 给个star/fork
-  
